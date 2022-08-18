@@ -11,6 +11,8 @@
 
 ?>
 
+<?php echo do_shortcode('[contact-form-7 id="18" title="Formularz kontaktowy"]');?>
+
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'armin-g' ) ); ?>">
