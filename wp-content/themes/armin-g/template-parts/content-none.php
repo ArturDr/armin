@@ -10,9 +10,14 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'armin-g' ); ?></h1>
-	</header><!-- .page-header -->
+<div class='row hero-banner'>
+            <div class='col-12 col-md-4'>
+                <h1>LOGO</h1>
+            </div>
+            <div class='col-12 col-md-8'>
+                <h1>Nazwa podstrony.</h1>
+            </div>
+        </div>
 
 	<div class="page-content">
 		<?php

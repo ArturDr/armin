@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -12,8 +13,34 @@
  * @package Armin_G
  */
 
-get_header();?>
+get_header(); ?>
 
-<h1>Generyczna Strona Główna.</h1>
+<div class='container-fluid'>
+    <div class='row hero-banner'>
+        <div class='col-12 col-md-4'>
+            <h1>LOGO</h1>
+        </div>
+        <div class='col-12 col-md-8'>
+            <h1>Strona główna</h1>
+        </div>
+    </div>
+</div>
+<div class='container'>
+    <div class='row'>
+        <div class='col'>
+            <h1>Tutaj zrobimy zajawkę o nas.</h1>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col'>
+            <h1>Tutaj zrobimy zajawkę oferty</h1>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col'>
+            <h1>Tutaj zrobimy zajawkę realizacji.</h1>
+        </div>
+    </div>
+</div>
 <?php
 get_footer();

@@ -10,17 +10,20 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<div class='container'>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<div class='row hero-banner'>
+				<div class='col-12 col-md-4'>
+					LOGO
+				</div>
+				<div class='col-12 col-md-8'>
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
+				the_archive_title( '<h1>', '</h1>' );
 				?>
-			</header><!-- .page-header -->
-
+				</div>
+			</div>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -44,8 +47,7 @@ get_header();
 		endif;
 		?>
 
-	</main><!-- #main -->
+</div>
 
 <?php
-get_sidebar();
 get_footer();
