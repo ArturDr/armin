@@ -28,13 +28,11 @@
 				$service = get_field('usluga_' . $i);
 				if (isset($nameService)) { ?>
 					<div class='row'>
-						<div class='col'>
-							<?php echo esc_html__($nameService) ?>
+						<div class='col-6'>
+							<h1><?php echo esc_html__($nameService) ?></h1>
 						</div>
-					</div>
-					<div class='row'>
-						<div class='col'>
-							<?php echo esc_html__($service) ?>
+						<div class='col-6'>
+							<p><?php echo esc_html__($service) ?></p>
 						</div>
 					</div>
 			<?php } else {
