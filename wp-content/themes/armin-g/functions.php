@@ -139,6 +139,7 @@ add_action( 'widgets_init', 'armin_g_widgets_init' );
  */
 function armin_g_scripts() {
 	wp_enqueue_style( 'armin-g-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'armin-style', get_template_directory_uri() . '/armin-style.css');
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap-dist/css/bootstrap.min.css' );
 	wp_style_add_data( 'armin-g-style', 'rtl', 'replace' );
 

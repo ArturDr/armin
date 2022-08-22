@@ -78,33 +78,199 @@ get_header(); ?>
     </div>
     <div class='row'>
         <div class='col'>
-            <a href="<?php echo the_permalink()?>">Szczegółowa oferta</a>
+            <a href="<?php echo the_permalink() ?>">Szczegółowa oferta</a>
         </div>
     </div>
     <?php wp_reset_postdata();
     $projects = new WP_Query(array(
         'post_type' => 'realizacje',
-        'post_per_page' => 5
+        'post_per_page' => 5,
+        'orderby' => 'date',
+        'order' => 'DESC'
     ));
 
-    if($projects->have_posts()) {
+    if ($projects->have_posts()) {
         $i = 0;
         $hmPosts = $projects->post_count;
-        while($projects->have_posts()) {
+        while ($projects->have_posts()) {
             $projects->the_post();
             $img = get_field('zdjecie_1');
-            if($hmPosts == 1) {
+            if ($hmPosts == 1) {
+    ?>
+                <div class='row'>
+                    <div class='col'>
+                        <div class='img-container'>
+                            <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                            <a href='<?php the_permalink(); ?>'>
+                                <div class="img-overlay">
+                                    <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            } elseif ($hmPosts == 2) {
+                if ($i == 0) {
+                ?>
+                    <div class='row'>
+                    <?php
+                }
+                if ($i <= 1) {
+                    ?>
+                        <div class='col-6'>
+                            <div class='img-container'>
+                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                <a href='<?php the_permalink(); ?>'>
+                                    <div class="img-overlay">
+                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <?php
+                }
+                if ($i == 1) {
+                    ?>
+                    </div>
+                <?php
+                }
+            } elseif ($hmPosts == 3) {
+                if ($i == 0) {
+                ?>
+                    <div class='row'>
+                    <?php
+                }
+                if ($i <= 1) {
+                    ?>
+                        <div class='col-6'>
+                            <div class='img-container'>
+                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                <a href='<?php the_permalink(); ?>'>
+                                    <div class="img-overlay">
+                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <?php
+                }
+                if ($i == 1) {
+                    ?>
+                    </div>
+                <?php
+                }
+                if ($i == 2) {
                 ?>
                     <div class='row'>
                         <div class='col'>
-                            <img src="<?php echo esc_url($img['url'])?> " alt="">
+                            <div class='img-container'>
+                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                <a href='<?php the_permalink(); ?>'>
+                                    <div class="img-overlay">
+                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 <?php
+                }
+            } elseif ($hmPosts == 4) {
+                if ($i == 0) {
+                ?>
+                    <div class='row'>
+                    <?php
+                }
+                if ($i <= 1) {
+                    ?>
+                        <div class='col-6'>
+                            <div class='img-container'>
+                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                <a href='<?php the_permalink(); ?>'>
+                                    <div class="img-overlay">
+                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <?php
+                }
+                if ($i == 2) {
+                    ?>
+                    </div>
+                    <div class='row'>
+                    <?php
+                }
+                if ($i >= 2 && $i <= 3) {
+                    ?>
+                        <div class='col-6'>
+                            <div class='img-container'>
+                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                <a href='<?php the_permalink(); ?>'>
+                                    <div class="img-overlay">
+                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <?php
+                }
+                if ($i == 3) {
+                    ?>
+                    </div>
+                <?php
+                }
+            } elseif ($hmPosts == 5) {
+                if ($i == 0) {
+                ?>
+                    <div class='row'>
+                    <?php
+                }
+                if ($i <= 1) {
+                    ?>
+                        <div class='col-6'>
+                            <div class='img-container'>
+                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                <a href='<?php the_permalink(); ?>'>
+                                    <div class="img-overlay">
+                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <?php
+                }
+                if ($i == 2) {
+                    ?>
+                    </div>
+                    <div class='row'>
+                    <?php
+                }
+                if ($i >= 2 && $i <= 4) {
+                    ?>
+                        <div class='col-4'>
+                            <div class='img-container'>
+                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                <a href='<?php the_permalink(); ?>'>
+                                    <div class="img-overlay">
+                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <?php
+                }
+                if ($i == 4) {
+                    ?>
+                    </div>
+    <?php
+                }
             }
             $i++;
+        }
     }
-}?>
+    wp_reset_postdata();?>
 
 
 </div>
