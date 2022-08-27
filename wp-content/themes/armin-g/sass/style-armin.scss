@@ -1,10 +1,14 @@
+@import '_variables.scss';
+
 .img-container {
-  position: relative; }
+  position: relative;
+}
 
 .front-image {
   display: block;
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 .img-overlay {
   position: absolute;
@@ -16,10 +20,12 @@
   width: 100%;
   opacity: 0;
   transition: 1s ease;
-  background-color: #84000f; }
+  background-color: $main-color;
+}
 
 .img-container:hover .img-overlay {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .img-text {
   color: white;
@@ -30,4 +36,5 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+}
