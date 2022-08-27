@@ -13,18 +13,10 @@
  * @package Armin_G
  */
 
-get_header(); ?>
+get_header();
+get_template_part('template-parts/content', 'hero'); ?>
 
-<div class='container-fluid'>
-    <div class='row hero-banner'>
-        <div class='col-12 col-md-4'>
-            <h1>LOGO</h1>
-        </div>
-        <div class='col-12 col-md-8'>
-            <h1>Strona główna</h1>
-        </div>
-    </div>
-</div>
+
 <div class='container'>
     <div class='row'>
         <div class='col'>
@@ -103,7 +95,7 @@ get_header(); ?>
                             <img src="<?php echo esc_url($img['url']) ?> " alt="">
                             <a href='<?php the_permalink(); ?>'>
                                 <div class="img-overlay">
-                                    <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                    <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                 </div>
                             </a>
                         </div>
@@ -123,7 +115,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($img['url']) ?> " alt="">
                                 <a href='<?php the_permalink(); ?>'>
                                     <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                     </div>
                                 </a>
                             </div>
@@ -148,7 +140,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($img['url']) ?> " alt="">
                                 <a href='<?php the_permalink(); ?>'>
                                     <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                     </div>
                                 </a>
                             </div>
@@ -168,7 +160,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($img['url']) ?> " alt="">
                                 <a href='<?php the_permalink(); ?>'>
                                     <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                     </div>
                                 </a>
                             </div>
@@ -189,7 +181,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($img['url']) ?> " alt="">
                                 <a href='<?php the_permalink(); ?>'>
                                     <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                     </div>
                                 </a>
                             </div>
@@ -209,7 +201,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($img['url']) ?> " alt="">
                                 <a href='<?php the_permalink(); ?>'>
                                     <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                     </div>
                                 </a>
                             </div>
@@ -234,7 +226,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($img['url']) ?> " alt="">
                                 <a href='<?php the_permalink(); ?>'>
                                     <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                     </div>
                                 </a>
                             </div>
@@ -254,7 +246,7 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($img['url']) ?> " alt="">
                                 <a href='<?php the_permalink(); ?>'>
                                     <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title());?></div>
+                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
                                     </div>
                                 </a>
                             </div>
@@ -270,7 +262,7 @@ get_header(); ?>
             $i++;
         }
     }
-    wp_reset_postdata();?>
+    wp_reset_postdata(); ?>
 
 
 </div>

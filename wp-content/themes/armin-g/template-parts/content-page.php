@@ -11,16 +11,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class='container-fluid'>
-		<div class='row hero-banner'>
-			<div class='col-12 col-md-4'>
-				<h1>LOGO</h1>
-			</div>
-			<div class='col-12 col-md-8'>
-				<h1><?php the_title() ?></h1>
-			</div>
-		</div>
-	</div>
 	<div class='container'>
 		<?php if (get_the_title() == "Oferta") : ?>
 			<?php for ($i = 1; $i <= 20; ++$i) {

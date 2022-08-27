@@ -11,16 +11,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class='container-fluid'>
-		<div class='row hero-banner'>
-			<div class='col-12 col-md-4'>
-				<h1>LOGO</h1>
-			</div>
-			<div class='col-12 col-md-8'>
-				<h1><?php the_title(); ?></h1>
-			</div>
-		</div>
-	</div>
 	<div class='container'>
 		<?php if (get_post_type() == 'realizacje') {
 			$poczatek = get_field('data_poczatku');
@@ -49,27 +39,29 @@
 				<?php echo get_the_content(); ?>
 			</div>
 		</div>
-		<div class='row'>
-			<div class='col-4'>
-				<img src='<?php echo esc_url($img1['url']); ?>' alt='<?php echo esc_attr($img1['alt']); ?>'>
+		<?php if (get_post_type() == 'realizacje') { ?>
+			<div class='row'>
+				<div class='col-4'>
+					<img src='<?php echo esc_url($img1['url']); ?>' alt='<?php echo esc_attr($img1['alt']); ?>'>
+				</div>
+				<div class='col-4'>
+					<img src='<?php echo esc_url($img2['url']); ?>' alt='<?php echo esc_attr($img2['alt']); ?>'>
+				</div>
+				<div class='col-4'>
+					<img src='<?php echo esc_url($img3['url']); ?>' alt='<?php echo esc_attr($img3['alt']); ?>'>
+				</div>
 			</div>
-			<div class='col-4'>
-				<img src='<?php echo esc_url($img2['url']); ?>' alt='<?php echo esc_attr($img2['alt']); ?>'>
+			<div class='row'>
+				<div class='col-4'>
+					<img src='<?php echo esc_url($img4['url']); ?>' alt='<?php echo esc_attr($img4['alt']); ?>'>
+				</div>
+				<div class='col-4'>
+					<img src='<?php echo esc_url($img5['url']); ?>' alt='<?php echo esc_attr($img5['alt']); ?>'>
+				</div>
+				<div class='col-4'>
+					<img src='<?php echo esc_url($img6['url']); ?>' alt='<?php echo esc_attr($img6['alt']); ?>'>
+				</div>
 			</div>
-			<div class='col-4'>
-				<img src='<?php echo esc_url($img3['url']); ?>' alt='<?php echo esc_attr($img3['alt']); ?>'>
-			</div>
-		</div>
-		<div class='row'>
-			<div class='col-4'>
-				<img src='<?php echo esc_url($img4['url']); ?>' alt='<?php echo esc_attr($img4['alt']); ?>'>
-			</div>
-			<div class='col-4'>
-				<img src='<?php echo esc_url($img5['url']); ?>' alt='<?php echo esc_attr($img5['alt']); ?>'>
-			</div>
-			<div class='col-4'>
-				<img src='<?php echo esc_url($img6['url']); ?>' alt='<?php echo esc_attr($img6['alt']); ?>'>
-			</div>
-		</div>
 	</div>
+<?php	} ?>
 </article><!-- #post-<?php the_ID(); ?> -->

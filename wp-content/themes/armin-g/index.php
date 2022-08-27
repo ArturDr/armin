@@ -14,18 +14,7 @@
  */
 
 get_header();
-?>
-
-<div class='container-fluid'>
-	<div class='row hero-banner'>
-		<div class='col-12 col-md-4'>
-			<h1>LOGO</h1>
-		</div>
-		<div class='col-12 col-md-8'>
-			<h1>Aktualności</h1>
-		</div>
-	</div>
-</div>
+get_template_part('template-parts/content', 'hero'); ?>
 <div class='container'>
 
 	<?php
