@@ -1,40 +1,108 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
-.img-container {
-  position: relative;
-}
+html {
+  font-size: 100%;
+  body {
+    .armin-nav {
+      background: $main-color;
 
-.front-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+      a {
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $font;
+        font-size: 1.2em;
+      }
+      a:hover {
+        color: $white;
+      }
+    }
 
-.img-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: $main-color;
-}
+    .bg-front-page, .bg-news, .bg-contact, .bg-about-us, .bg-offer, .bg-project {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      .hero-banner-first {
+        padding-top: 2em;
+        img {
+          background: $grey-background;
+          padding: 0.6em 1.5em;
+        }
+      }
+      .hero-banner-second {
+        padding-bottom: 2em;
+        h1 {
+          padding: 0.6em 1.5em;
+          background: $grey-background;
+          margin: 0.2em 0;
+          font-family: $font;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+    }
 
-.img-container:hover .img-overlay {
-  opacity: 1;
-}
+    .bg-front-page {
+      background-image: url('../images/front page.jpg');
+    }
 
-.img-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    .bg-news {
+      background-image: url('../images/news.jpg');
+    }
+
+    .bg-contact {
+      background-image: url('../images/contact.jpg');
+    }
+
+    .bg-about-us {
+      background-image: url('../images/about us.jpg');
+    }
+
+    .bg-project {
+      background-image: url('../images/project.jpg');
+    }
+
+    .bg-offer {
+      background-image: url('../images/offer.jpg');
+    }
+
+    .img-container {
+      position: relative;
+    }
+
+    .front-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .img-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 1s ease;
+      background-color: $main-color;
+    }
+
+    .img-container:hover .img-overlay {
+      opacity: 1;
+    }
+
+    .img-text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
 }

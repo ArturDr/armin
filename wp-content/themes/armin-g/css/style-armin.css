@@ -1,33 +1,71 @@
-.img-container {
-  position: relative; }
-
-.front-image {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.img-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: #84000f; }
-
-.img-container:hover .img-overlay {
-  opacity: 1; }
-
-.img-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
+html {
+  font-size: 100%; }
+  html body .armin-nav {
+    background: #84000f; }
+    html body .armin-nav a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Lato;
+      font-size: 1.2em; }
+    html body .armin-nav a:hover {
+      color: white; }
+  html body .bg-front-page, html body .bg-news, html body .bg-contact, html body .bg-about-us, html body .bg-offer, html body .bg-project {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    html body .bg-front-page .hero-banner-first, html body .bg-news .hero-banner-first, html body .bg-contact .hero-banner-first, html body .bg-about-us .hero-banner-first, html body .bg-offer .hero-banner-first, html body .bg-project .hero-banner-first {
+      padding-top: 2em; }
+      html body .bg-front-page .hero-banner-first img, html body .bg-news .hero-banner-first img, html body .bg-contact .hero-banner-first img, html body .bg-about-us .hero-banner-first img, html body .bg-offer .hero-banner-first img, html body .bg-project .hero-banner-first img {
+        background: rgba(255, 255, 255, 0.45);
+        padding: 0.6em 1.5em; }
+    html body .bg-front-page .hero-banner-second, html body .bg-news .hero-banner-second, html body .bg-contact .hero-banner-second, html body .bg-about-us .hero-banner-second, html body .bg-offer .hero-banner-second, html body .bg-project .hero-banner-second {
+      padding-bottom: 2em; }
+      html body .bg-front-page .hero-banner-second h1, html body .bg-news .hero-banner-second h1, html body .bg-contact .hero-banner-second h1, html body .bg-about-us .hero-banner-second h1, html body .bg-offer .hero-banner-second h1, html body .bg-project .hero-banner-second h1 {
+        padding: 0.6em 1.5em;
+        background: rgba(255, 255, 255, 0.45);
+        margin: 0.2em 0;
+        font-family: Lato;
+        font-weight: 500;
+        text-transform: uppercase; }
+  html body .bg-front-page {
+    background-image: url("../images/front page.jpg"); }
+  html body .bg-news {
+    background-image: url("../images/news.jpg"); }
+  html body .bg-contact {
+    background-image: url("../images/contact.jpg"); }
+  html body .bg-about-us {
+    background-image: url("../images/about us.jpg"); }
+  html body .bg-project {
+    background-image: url("../images/project.jpg"); }
+  html body .bg-offer {
+    background-image: url("../images/offer.jpg"); }
+  html body .img-container {
+    position: relative; }
+  html body .front-image {
+    display: block;
+    width: 100%;
+    height: auto; }
+  html body .img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #84000f; }
+  html body .img-container:hover .img-overlay {
+    opacity: 1; }
+  html body .img-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
