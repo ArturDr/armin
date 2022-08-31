@@ -74,6 +74,61 @@ html {
       background-image: url("../images/offer.jpg");
     }
 
+    .armin-button {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $button-color;
+      padding: 0.5em 1em;
+      border-radius: 3px;
+    }
+    .armin-button:hover {
+      background-color: $button-hover;
+      border-color: $button-hover;
+      color: $white;
+    }
+
+    .front-section-about {
+      padding: 0.5em 0;
+      font-family: $font;
+      .row {
+        margin: 2em 0;
+        h1 {
+          border-bottom: solid $main-color 2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .front-section-offer {
+      padding: 0.5em 0;
+      font-family: $font;
+      background-image: url("../images/offer-front.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      .row {
+        margin: 2em 0;
+        .offer-title {
+          text-transform: uppercase;
+        }
+      }
+      .offer-back {
+        background: $grey-background;
+      }
+    }
+
+    .front-section-projects {
+      padding: 0.5em 0;
+      font-family: $font;
+      .row {
+        margin: 2em 0;
+        h1 {
+          border-bottom: solid $main-color 2px;
+        }
+      }
+    }
+
     .img-container {
       position: relative;
     }

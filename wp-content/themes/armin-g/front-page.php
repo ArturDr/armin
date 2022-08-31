@@ -19,7 +19,7 @@ get_template_part('template-parts/hero'); ?>
 <div class='front-section-about'>
     <div class='container'>
         <div class='row'>
-            <div class='col'>
+            <div class='col text-center'>
                 <h1>O NAS</h1>
             </div>
         </div>
@@ -29,8 +29,8 @@ get_template_part('template-parts/hero'); ?>
             </div>
         </div>
         <div class='row'>
-            <div class='col'>
-                <a href="<?php echo site_url('/o-nas'); ?>">Więcej</a>
+            <div class='col text-center'>
+                <a class='btn armin-button' href="<?php echo site_url('/o-nas'); ?>">Więcej</a>
             </div>
         </div>
     </div>
@@ -41,12 +41,12 @@ get_template_part('template-parts/hero'); ?>
             'pagename' => 'oferta',
         ));
         $offer->the_post(); ?>
-        <div class='row'>
-            <div class='col'>
-                <h1><?php echo esc_html__(the_title()); ?></h1>
+        <div class='row offer-back'>
+            <div class='col text-center'>
+                <h1 class='offer-title'><?php echo esc_html__(the_title()); ?></h1>
             </div>
         </div>
-        <div class='row'>
+        <div class='row offer-back'>
             <?php
             for ($i = 1; $i <= 2; ++$i) {
                 $usluga = [
@@ -64,7 +64,7 @@ get_template_part('template-parts/hero'); ?>
             }
             ?>
         </div>
-        <div class='row'>
+        <div class='row offer-back'>
             <?php
             for ($i = 3; $i <= 4; ++$i) {
                 $usluga = [
@@ -83,8 +83,8 @@ get_template_part('template-parts/hero'); ?>
             ?>
         </div>
         <div class='row'>
-            <div class='col'>
-                <a href="<?php echo the_permalink() ?>">Szczegółowa oferta</a>
+            <div class='col text-center'>
+                <a class='btn armin-button' href="<?php echo the_permalink() ?>">Szczegółowa oferta</a>
             </div>
         </div>
     </div>
@@ -100,7 +100,7 @@ get_template_part('template-parts/hero'); ?>
             'order' => 'DESC'
         )); ?>
         <div class='row'>
-            <div class='col'>
+            <div class='col text-center'>
                 <h1>Najnowsze realizacje</h1>
             </div>
         </div>
@@ -289,8 +289,8 @@ get_template_part('template-parts/hero'); ?>
         wp_reset_postdata(); ?>
 
         <div class='row'>
-            <div class='col'>
-                <a href="<?php echo get_post_type_archive_link('realizacje'); ?>">Wszystkie realizacje</a>
+            <div class='col text-center'>
+                <a class='btn armin-button' href="<?php echo get_post_type_archive_link('realizacje'); ?>">Wszystkie realizacje</a>
             </div>
         </div>
     </div>
