@@ -2,6 +2,9 @@
 
 html {
   font-size: 100%;
+  .page {
+    margin: 0;
+  }
   body {
     .armin-nav {
       background: $main-color;
@@ -18,7 +21,12 @@ html {
       }
     }
 
-    .bg-front-page, .bg-news, .bg-contact, .bg-about-us, .bg-offer, .bg-project {
+    .bg-front-page,
+    .bg-news,
+    .bg-contact,
+    .bg-about-us,
+    .bg-offer,
+    .bg-project {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -43,27 +51,27 @@ html {
     }
 
     .bg-front-page {
-      background-image: url('../images/front page.jpg');
+      background-image: url("../images/front page.jpg");
     }
 
     .bg-news {
-      background-image: url('../images/news.jpg');
+      background-image: url("../images/news.jpg");
     }
 
     .bg-contact {
-      background-image: url('../images/contact.jpg');
+      background-image: url("../images/contact.jpg");
     }
 
     .bg-about-us {
-      background-image: url('../images/about us.jpg');
+      background-image: url("../images/about us.jpg");
     }
 
     .bg-project {
-      background-image: url('../images/project.jpg');
+      background-image: url("../images/project.jpg");
     }
 
     .bg-offer {
-      background-image: url('../images/offer.jpg');
+      background-image: url("../images/offer.jpg");
     }
 
     .img-container {
@@ -103,6 +111,52 @@ html {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
+    }
+
+    footer {
+      background: $footer-color;
+      border-top: $main-color 2px solid;
+      .row {
+        padding-top: 2em;
+        h2 {
+          text-transform: uppercase;
+        }
+        .wpcf7 {
+          font-family: $font;
+          .wpcf7-form {
+            font-family: $font;
+            label {
+              width: 100%;
+              .wpcf7-form-control-wrap {
+                input {
+                  width: 100%;
+                }
+                .wpcf7-not-valid-tip {
+                  color: $main-color;
+                }
+              }
+            }
+            .wpcf7-submit {
+              width: 100%;
+              background-color: $button-color;
+              color: $white;
+              text-transform: uppercase;
+            }
+            .wpcf7-submit:hover {
+              background-color: $button-hover;
+            }
+            .wpcf7-spinner {
+              display: none;
+            }
+            .wpcf7-response-output {
+              border: $button-color solid 2px;
+              margin: 2em 0;
+              color: $main-color;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
     }
   }
 }

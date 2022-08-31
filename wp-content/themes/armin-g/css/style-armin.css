@@ -1,5 +1,7 @@
 html {
   font-size: 100%; }
+  html .page {
+    margin: 0; }
   html body .armin-nav {
     background: #84000f; }
     html body .armin-nav a {
@@ -10,18 +12,43 @@ html {
       font-size: 1.2em; }
     html body .armin-nav a:hover {
       color: white; }
-  html body .bg-front-page, html body .bg-news, html body .bg-contact, html body .bg-about-us, html body .bg-offer, html body .bg-project {
+  html body .bg-front-page,
+  html body .bg-news,
+  html body .bg-contact,
+  html body .bg-about-us,
+  html body .bg-offer,
+  html body .bg-project {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
-    html body .bg-front-page .hero-banner-first, html body .bg-news .hero-banner-first, html body .bg-contact .hero-banner-first, html body .bg-about-us .hero-banner-first, html body .bg-offer .hero-banner-first, html body .bg-project .hero-banner-first {
+    html body .bg-front-page .hero-banner-first,
+    html body .bg-news .hero-banner-first,
+    html body .bg-contact .hero-banner-first,
+    html body .bg-about-us .hero-banner-first,
+    html body .bg-offer .hero-banner-first,
+    html body .bg-project .hero-banner-first {
       padding-top: 2em; }
-      html body .bg-front-page .hero-banner-first img, html body .bg-news .hero-banner-first img, html body .bg-contact .hero-banner-first img, html body .bg-about-us .hero-banner-first img, html body .bg-offer .hero-banner-first img, html body .bg-project .hero-banner-first img {
+      html body .bg-front-page .hero-banner-first img,
+      html body .bg-news .hero-banner-first img,
+      html body .bg-contact .hero-banner-first img,
+      html body .bg-about-us .hero-banner-first img,
+      html body .bg-offer .hero-banner-first img,
+      html body .bg-project .hero-banner-first img {
         background: rgba(255, 255, 255, 0.45);
         padding: 0.6em 1.5em; }
-    html body .bg-front-page .hero-banner-second, html body .bg-news .hero-banner-second, html body .bg-contact .hero-banner-second, html body .bg-about-us .hero-banner-second, html body .bg-offer .hero-banner-second, html body .bg-project .hero-banner-second {
+    html body .bg-front-page .hero-banner-second,
+    html body .bg-news .hero-banner-second,
+    html body .bg-contact .hero-banner-second,
+    html body .bg-about-us .hero-banner-second,
+    html body .bg-offer .hero-banner-second,
+    html body .bg-project .hero-banner-second {
       padding-bottom: 2em; }
-      html body .bg-front-page .hero-banner-second h1, html body .bg-news .hero-banner-second h1, html body .bg-contact .hero-banner-second h1, html body .bg-about-us .hero-banner-second h1, html body .bg-offer .hero-banner-second h1, html body .bg-project .hero-banner-second h1 {
+      html body .bg-front-page .hero-banner-second h1,
+      html body .bg-news .hero-banner-second h1,
+      html body .bg-contact .hero-banner-second h1,
+      html body .bg-about-us .hero-banner-second h1,
+      html body .bg-offer .hero-banner-second h1,
+      html body .bg-project .hero-banner-second h1 {
         padding: 0.6em 1.5em;
         background: rgba(255, 255, 255, 0.45);
         margin: 0.2em 0;
@@ -69,3 +96,34 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center; }
+  html body footer {
+    background: #e1e1e1;
+    border-top: #84000f 2px solid; }
+    html body footer .row {
+      padding-top: 2em; }
+      html body footer .row h2 {
+        text-transform: uppercase; }
+      html body footer .row .wpcf7 {
+        font-family: Lato; }
+        html body footer .row .wpcf7 .wpcf7-form {
+          font-family: Lato; }
+          html body footer .row .wpcf7 .wpcf7-form label {
+            width: 100%; }
+            html body footer .row .wpcf7 .wpcf7-form label .wpcf7-form-control-wrap input {
+              width: 100%; }
+            html body footer .row .wpcf7 .wpcf7-form label .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+              color: #84000f; }
+          html body footer .row .wpcf7 .wpcf7-form .wpcf7-submit {
+            width: 100%;
+            background-color: #208b04;
+            color: white;
+            text-transform: uppercase; }
+          html body footer .row .wpcf7 .wpcf7-form .wpcf7-submit:hover {
+            background-color: #205b04; }
+          html body footer .row .wpcf7 .wpcf7-form .wpcf7-spinner {
+            display: none; }
+          html body footer .row .wpcf7 .wpcf7-form .wpcf7-response-output {
+            border: #208b04 solid 2px;
+            margin: 2em 0;
+            color: #84000f;
+            border-radius: 3px; }
