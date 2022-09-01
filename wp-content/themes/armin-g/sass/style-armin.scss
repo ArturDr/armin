@@ -107,30 +107,40 @@ html {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      .offer-row {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
       .row {
-        margin: 2em 0;
         .offer-title {
           text-transform: uppercase;
         }
       }
       .offer-back {
         background: $grey-background;
+        margin: 1em 0;
       }
+    }
+    .button-row {
+      margin-top: 2em;
+      margin-bottom: 2em;
     }
 
     .front-section-projects {
       padding: 0.5em 0;
       font-family: $font;
       .row {
-        margin: 2em 0;
         h1 {
           border-bottom: solid $main-color 2px;
+          text-transform: uppercase;
+          margin: 1em 0;
         }
       }
     }
 
     .img-container {
       position: relative;
+      margin: 1em 0;
     }
 
     .front-image {
@@ -166,6 +176,19 @@ html {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
+    }
+
+    .armin-row {
+      font-family: $font;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      h1 {
+        border-bottom: solid $main-color 2px;
+        a {
+        text-decoration: none;
+        color: $black;
+        }
+      }
     }
 
     footer {

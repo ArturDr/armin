@@ -41,12 +41,12 @@ get_template_part('template-parts/hero'); ?>
             'pagename' => 'oferta',
         ));
         $offer->the_post(); ?>
-        <div class='row offer-back'>
-            <div class='col text-center'>
+        <div class='row offer-row'>
+            <div class='col text-center offer-back'>
                 <h1 class='offer-title'><?php echo esc_html__(the_title()); ?></h1>
             </div>
         </div>
-        <div class='row offer-back'>
+        <div class='row'>
             <?php
             for ($i = 1; $i <= 2; ++$i) {
                 $usluga = [
@@ -55,25 +55,7 @@ get_template_part('template-parts/hero'); ?>
                 ];
                 if (isset($usluga['nazwa']) && isset($usluga['tresc'])) {
             ?>
-                    <div class='col-12 col-md-6'>
-                        <h1><?php echo esc_html($usluga['nazwa']); ?></h1>
-                        <p><?php echo esc_html($usluga['tresc']); ?></p>
-                    </div>
-            <?php
-                }
-            }
-            ?>
-        </div>
-        <div class='row offer-back'>
-            <?php
-            for ($i = 3; $i <= 4; ++$i) {
-                $usluga = [
-                    'nazwa' => get_field('nazwa_uslugi_' . $i),
-                    'tresc' => get_field('usluga_' . $i)
-                ];
-                if (isset($usluga['nazwa']) && isset($usluga['tresc'])) {
-            ?>
-                    <div class='col-12 col-md-6'>
+                    <div class='col-12 col-md-6 offer-back'>
                         <h1><?php echo esc_html($usluga['nazwa']); ?></h1>
                         <p><?php echo esc_html($usluga['tresc']); ?></p>
                     </div>
@@ -83,6 +65,24 @@ get_template_part('template-parts/hero'); ?>
             ?>
         </div>
         <div class='row'>
+            <?php
+            for ($i = 3; $i <= 4; ++$i) {
+                $usluga = [
+                    'nazwa' => get_field('nazwa_uslugi_' . $i),
+                    'tresc' => get_field('usluga_' . $i)
+                ];
+                if (isset($usluga['nazwa']) && isset($usluga['tresc'])) {
+            ?>
+                    <div class='col-12 col-md-6 offer-back'>
+                        <h1><?php echo esc_html($usluga['nazwa']); ?></h1>
+                        <p><?php echo esc_html($usluga['tresc']); ?></p>
+                    </div>
+            <?php
+                }
+            }
+            ?>
+        </div>
+        <div class='row button-row'>
             <div class='col text-center'>
                 <a class='btn armin-button' href="<?php echo the_permalink() ?>">Szczegółowa oferta</a>
             </div>
@@ -288,7 +288,7 @@ get_template_part('template-parts/hero'); ?>
         }
         wp_reset_postdata(); ?>
 
-        <div class='row'>
+        <div class='row button-row'>
             <div class='col text-center'>
                 <a class='btn armin-button' href="<?php echo get_post_type_archive_link('realizacje'); ?>">Wszystkie realizacje</a>
             </div>

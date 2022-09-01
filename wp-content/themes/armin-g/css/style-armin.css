@@ -93,21 +93,27 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
-    html body .front-section-offer .row {
-      margin: 2em 0; }
-      html body .front-section-offer .row .offer-title {
-        text-transform: uppercase; }
+    html body .front-section-offer .offer-row {
+      margin-top: 2em;
+      margin-bottom: 2em; }
+    html body .front-section-offer .row .offer-title {
+      text-transform: uppercase; }
     html body .front-section-offer .offer-back {
-      background: rgba(255, 255, 255, 0.45); }
+      background: rgba(255, 255, 255, 0.45);
+      margin: 1em 0; }
+  html body .button-row {
+    margin-top: 2em;
+    margin-bottom: 2em; }
   html body .front-section-projects {
     padding: 0.5em 0;
     font-family: Lato; }
-    html body .front-section-projects .row {
-      margin: 2em 0; }
-      html body .front-section-projects .row h1 {
-        border-bottom: solid #84000f 2px; }
+    html body .front-section-projects .row h1 {
+      border-bottom: solid #84000f 2px;
+      text-transform: uppercase;
+      margin: 1em 0; }
   html body .img-container {
-    position: relative; }
+    position: relative;
+    margin: 1em 0; }
   html body .front-image {
     display: block;
     width: 100%;
@@ -135,6 +141,15 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center; }
+  html body .armin-row {
+    font-family: Lato;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    html body .armin-row h1 {
+      border-bottom: solid #84000f 2px; }
+      html body .armin-row h1 a {
+        text-decoration: none;
+        color: black; }
   html body footer {
     background: #e1e1e1;
     border-top: #84000f 2px solid; }
