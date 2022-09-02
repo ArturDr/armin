@@ -16,6 +16,7 @@
                 <?php } elseif (get_the_title() == 'O nas') { ?>bg-about-us
                 <?php } elseif (get_the_title() == 'Oferta') { ?>bg-offer
                 <?php } elseif (get_the_title() == 'Strona główna') { ?>bg-front-page
+                <?php } elseif (is_404()) { ?>bg-404
                 <?php } else { ?>bg-news
             <?php }
             } ?>'>
@@ -29,6 +30,7 @@
             <?php if (is_main_site()) :
                 if (is_singular()) : ?><h1><?php the_title(); ?></h1>
                 <?php elseif (is_post_type_archive('realizacje')) : ?><h1>Realizacje</h1>
+                <?php elseif (is_404()) : ?><h1>Strona nie istnieje</h1>
                 <?php else : ?><h1>Aktualności</h1>
             <?php endif;
             endif; ?>

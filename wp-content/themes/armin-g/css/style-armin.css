@@ -12,12 +12,19 @@ html {
       font-size: 1.2em; }
     html body .armin-nav a:hover {
       color: white; }
+    html body .armin-nav .navbar-toggler {
+      border-color: white; }
+      html body .armin-nav .navbar-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+    html body .armin-nav .navbar-toggler:focus {
+      box-shadow: none; }
   html body .bg-front-page,
   html body .bg-news,
   html body .bg-contact,
   html body .bg-about-us,
   html body .bg-offer,
-  html body .bg-project {
+  html body .bg-project,
+  html body .bg-404 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -26,14 +33,16 @@ html {
     html body .bg-contact .hero-banner-first,
     html body .bg-about-us .hero-banner-first,
     html body .bg-offer .hero-banner-first,
-    html body .bg-project .hero-banner-first {
+    html body .bg-project .hero-banner-first,
+    html body .bg-404 .hero-banner-first {
       padding-top: 2em; }
       html body .bg-front-page .hero-banner-first img,
       html body .bg-news .hero-banner-first img,
       html body .bg-contact .hero-banner-first img,
       html body .bg-about-us .hero-banner-first img,
       html body .bg-offer .hero-banner-first img,
-      html body .bg-project .hero-banner-first img {
+      html body .bg-project .hero-banner-first img,
+      html body .bg-404 .hero-banner-first img {
         background: rgba(255, 255, 255, 0.45);
         padding: 0.6em 1.5em; }
     html body .bg-front-page .hero-banner-second,
@@ -41,14 +50,16 @@ html {
     html body .bg-contact .hero-banner-second,
     html body .bg-about-us .hero-banner-second,
     html body .bg-offer .hero-banner-second,
-    html body .bg-project .hero-banner-second {
+    html body .bg-project .hero-banner-second,
+    html body .bg-404 .hero-banner-second {
       padding-bottom: 2em; }
       html body .bg-front-page .hero-banner-second h1,
       html body .bg-news .hero-banner-second h1,
       html body .bg-contact .hero-banner-second h1,
       html body .bg-about-us .hero-banner-second h1,
       html body .bg-offer .hero-banner-second h1,
-      html body .bg-project .hero-banner-second h1 {
+      html body .bg-project .hero-banner-second h1,
+      html body .bg-404 .hero-banner-second h1 {
         padding: 0.6em 1.5em;
         background: rgba(255, 255, 255, 0.45);
         margin: 0.2em 0;
@@ -67,6 +78,8 @@ html {
     background-image: url("../images/project.jpg"); }
   html body .bg-offer {
     background-image: url("../images/offer.jpg"); }
+  html body .bg-404 {
+    background-image: url("../images/404 image.jpg"); }
   html body .armin-button {
     text-decoration: none;
     text-transform: uppercase;
@@ -150,6 +163,10 @@ html {
       html body .armin-row h1 a {
         text-decoration: none;
         color: black; }
+  html body .projects-armin img {
+    margin: 1em 0; }
+  html body .projects-armin .h1-project {
+    border: none; }
   html body footer {
     background: #e1e1e1;
     border-top: #84000f 2px solid; }

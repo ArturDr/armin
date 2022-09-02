@@ -19,6 +19,16 @@ html {
       a:hover {
         color: $white;
       }
+      .navbar-toggler {
+        border-color: $white;
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+      }
+      .navbar-toggler:focus {
+        box-shadow: none;
+      }
     }
 
     .bg-front-page,
@@ -26,7 +36,8 @@ html {
     .bg-contact,
     .bg-about-us,
     .bg-offer,
-    .bg-project {
+    .bg-project,
+    .bg-404 {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -72,6 +83,10 @@ html {
 
     .bg-offer {
       background-image: url("../images/offer.jpg");
+    }
+
+    .bg-404 {
+      background-image: url("../images/404 image.jpg");
     }
 
     .armin-button {
@@ -185,9 +200,18 @@ html {
       h1 {
         border-bottom: solid $main-color 2px;
         a {
-        text-decoration: none;
-        color: $black;
+          text-decoration: none;
+          color: $black;
         }
+      }
+    }
+
+    .projects-armin {
+      img {
+        margin: 1em 0;
+      }
+      .h1-project {
+        border: none;
       }
     }
 

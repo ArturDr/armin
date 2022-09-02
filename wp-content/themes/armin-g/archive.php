@@ -12,9 +12,11 @@ get_header();
 ?>
 
 <?php if (have_posts()) :
-
 	get_template_part('template-parts/hero');
 	/* Start the Loop */
+	?>
+	<div class='container'>
+	<?php
 	while (have_posts()) :
 		the_post();
 
