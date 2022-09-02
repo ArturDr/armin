@@ -24,13 +24,13 @@
 			if ($poczatek != '') { ?>
 				<div class='row armin-row'>
 					<div class='col'>
-						<h1 class='h1-project'>Rozpoczęcie realizacji: <?php echo $poczatek; ?></h1>
+						<h1 class='h1-project'>Rozpoczęcie: <?php echo $poczatek; ?></h1>
 					</div>
 				</div>
 			<?php } ?>
 			<div class='row armin-row'>
 				<div class='col'>
-					<h1 class='h1-project'>Zakończenie realizacji: <?php echo $koniec; ?></h1>
+					<h1 class='h1-project'>Zakończenie: <?php echo $koniec; ?></h1>
 				</div>
 			</div>
 		<?php } ?>

@@ -66,9 +66,9 @@
 			<?php }
 
 			if ($tel != '') { ?>
-				<div class='row armin-row'>
-					<div class='col text-center'>
-						<a href='tel:<?php echo $tel; ?>'><h2><?php echo $tel; ?></h2></a>
+				<div class='row armin-row justify-content-center'>
+					<div class='col-auto'>
+						<a class='tel' href='tel:<?php echo $tel; ?>'><h2><?php echo $tel; ?></h2></a>
 					</div>
 				</div>
 				<div class='row justify-content-center icons-row'>

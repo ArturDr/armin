@@ -207,6 +207,9 @@ html {
         text-decoration: none;
         color: $black;
       }
+      .tel:hover {
+        color: $button-color;
+      }
     }
 
     .icons-row {
@@ -217,6 +220,9 @@ html {
       .fa-solid, .fa-brands {
         font-size: 3em;
         color: $main-color;
+        &:hover {
+          color: $button-hover;
+        }
       }
     }
 
@@ -226,6 +232,7 @@ html {
       }
       .h1-project {
         border: none;
+        text-transform: uppercase;
       }
     }
 
