@@ -141,6 +141,7 @@ function armin_g_scripts() {
 	wp_enqueue_style( 'armin-g-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'armin-style', get_template_directory_uri() . '/css/style-armin.css');
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap-dist/css/bootstrap.min.css' );
+	wp_enqueue_style( 'icon-awsome', get_template_directory_uri(). '/fontawesome-free-6.2.0-web/css/all.css');
 	wp_enqueue_style( 'lato-font', '//fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 	wp_style_add_data( 'armin-g-style', 'rtl', 'replace' );
 

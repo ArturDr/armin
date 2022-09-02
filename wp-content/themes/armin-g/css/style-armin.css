@@ -160,9 +160,19 @@ html {
     margin-bottom: 2em; }
     html body .armin-row h1 {
       border-bottom: solid #84000f 2px; }
-      html body .armin-row h1 a {
-        text-decoration: none;
-        color: black; }
+    html body .armin-row .h1-contact {
+      border-bottom: solid #205b04 2px; }
+    html body .armin-row a {
+      text-decoration: none;
+      color: black; }
+  html body .icons-row {
+    border-top: solid #205b04 2px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 1em; }
+    html body .icons-row .fa-solid, html body .icons-row .fa-brands {
+      font-size: 3em;
+      color: #84000f; }
   html body .projects-armin img {
     margin: 1em 0; }
   html body .projects-armin .h1-project {

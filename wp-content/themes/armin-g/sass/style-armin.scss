@@ -199,10 +199,24 @@ html {
       margin-bottom: 2em;
       h1 {
         border-bottom: solid $main-color 2px;
-        a {
-          text-decoration: none;
-          color: $black;
-        }
+      }
+      .h1-contact{
+        border-bottom: solid $button-hover 2px;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    .icons-row {
+      border-top: solid $button-hover 2px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      padding-top: 1em;
+      .fa-solid, .fa-brands {
+        font-size: 3em;
+        color: $main-color;
       }
     }
 

@@ -17,11 +17,11 @@
 				$nameService = get_field('nazwa_uslugi_' . $i);
 				$service = get_field('usluga_' . $i);
 				if (isset($nameService)) { ?>
-					<div class='row'>
-						<div class='col-6'>
+					<div class='row armin-row'>
+						<div class='col-md-6 col-12'>
 							<h1><?php echo esc_html__($nameService) ?></h1>
 						</div>
-						<div class='col-6'>
+						<div class='col-md-6 col-12'>
 							<p><?php echo esc_html__($service) ?></p>
 						</div>
 					</div>
@@ -42,89 +42,64 @@
 			$facebook = get_field('facebook');
 			$instagram = get_field('instagram');
 			$youtube = get_field('youtube');
-			if (isset($nazwaFirmy)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $nazwaFirmy; ?>
+			if ($nazwaFirmy != '') { ?>
+				<div class='row armin-row'>
+					<div class='col text-center'>
+						<h1 class='h1-contact'><?php echo $nazwaFirmy; ?></h1>
 					</div>
 				</div>
 			<?php }
-			if (isset($ulica)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $ulica; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($numerDomu)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $numerDomu; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($numerLokalu)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $numerLokalu; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($kodPocztowy)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $kodPocztowy; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($miasto)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $miasto; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($tel)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $tel; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($email)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $email; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($facebook)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $facebook; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($instagram)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $instagram; ?>
-					</div>
-				</div>
-			<?php }
-			if (isset($youtube)) { ?>
-				<div class='row'>
-					<div class='col'>
-						<?php echo $youtube; ?>
+			if ($ulica != '') { ?>
+				<div class='row armin-row'>
+					<div class='col text-center'>
+						<h2><?php echo $ulica; if ($numerDomu != '') { ?> <?php echo $numerDomu; if ($numerLokalu != '') {?>/<?php echo $numerLokalu; } }?></h2>
 					</div>
 				</div>
 			<?php } ?>
-		<?php else : ?>
-			<div class='row'>
-				<div class='col'>
-					<?php echo get_the_content(); ?>
+			<?php
+			if ($kodPocztowy != '') { ?>
+				<div class='row armin-row'>
+					<div class='col text-center'>
+						<h2><?php echo $kodPocztowy; if ($miasto != '') { ?> <?php echo $miasto; }?></h2>
+					</div>
 				</div>
-			</div>
-		<?php endif; ?>
+			<?php }
+
+			if ($tel != '') { ?>
+				<div class='row armin-row'>
+					<div class='col text-center'>
+						<a href='tel:<?php echo $tel; ?>'><h2><?php echo $tel; ?></h2></a>
+					</div>
+				</div>
+				<div class='row justify-content-center icons-row'>
+			<?php }
+			if ($email != '') { ?>
+					<div class='col-auto text-center'>
+						<a href='mailto:<?php echo $email; ?>'><i class="fa-solid fa-square-envelope"></i></a>
+					</div>
+				<?php }
+			if ($facebook != '') { ?>
+					<div class='col-auto text-center'>
+						<a href="<?php echo $facebook; ?>"><i class="fa-brands fa-square-facebook"></i></a>
+					</div>
+				<?php }
+			if ($instagram != '') { ?>
+					<div class='col-auto text-center'>
+						<a href='<?php echo $instagram; ?>'><i class="fa-brands fa-square-instagram"></i></a>
+					</div>
+				<?php }
+			if ($youtube != '') { ?>
+					<div class='col-auto text-center'>
+						<a href='<?php echo $youtube; ?>'><i class="fa-brands fa-square-youtube"></i></a>
+					</div>
+				<?php } ?>
+				</div>
+			<?php else : ?>
+				<div class='row'>
+					<div class='col'>
+						<?php echo get_the_content(); ?>
+					</div>
+				</div>
+			<?php endif; ?>
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->
