@@ -95,7 +95,7 @@
 				<?php } ?>
 				</div>
 			<?php else : ?>
-				<div class='row'>
+				<div class='row armin-row'>
 					<div class='col'>
 						<?php echo get_the_content(); ?>
 					</div>
