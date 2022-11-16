@@ -95,7 +95,7 @@ get_template_part('template-parts/hero'); ?>
         <?php
         $projects = new WP_Query(array(
             'post_type' => 'realizacje',
-            'post_per_page' => 5,
+            'posts_per_page' => 5,
             'orderby' => 'date',
             'order' => 'DESC'
         )); ?>
