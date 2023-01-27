@@ -118,10 +118,6 @@ html {
     .front-section-offer {
       padding: 0.5em 0;
       font-family: $font;
-      background-image: url("../images/offer-front.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       .offer-row {
         margin-top: 2em;
         margin-bottom: 2em;
@@ -129,6 +125,9 @@ html {
       .row {
         .offer-title {
           text-transform: uppercase;
+          border-bottom: solid $main-color 2px;
+          text-transform: uppercase;
+          margin: 1em 0;
         }
       }
       .offer-back {
@@ -277,6 +276,20 @@ html {
               color: $main-color;
               border-radius: 3px;
             }
+          }
+        }
+      }
+      a {
+        color: $black;
+        text-decoration: none;
+        &:hover {
+          color: $button-color;
+        }
+        &:visited {
+          color: $black;
+          text-decoration: none;
+          &:hover {
+            color: $button-color;
           }
         }
       }

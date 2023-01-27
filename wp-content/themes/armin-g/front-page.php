@@ -19,18 +19,25 @@ get_template_part('template-parts/hero'); ?>
 <div class='front-section-about'>
     <div class='container'>
         <div class='row'>
-            <div class='col text-center'>
-                <h1>O NAS</h1>
+            <div class='col-12 col-md-6'>
+                <img class='img-fluid' src='<?php echo get_template_directory_uri(); ?>/images/about-us-front.jpg'>
             </div>
-        </div>
-        <div class='row'>
-            <div class='col'>
-                <p><?php echo esc_html__(get_field('o_nas')); ?></p>
-            </div>
-        </div>
-        <div class='row'>
-            <div class='col text-center'>
-                <a class='btn armin-button' href="<?php echo site_url('/o-nas'); ?>">Więcej</a>
+            <div class='col-12 col-md-6 align-self-center'>
+                <div class='row'>
+                    <div class='col text-center'>
+                        <h1>O NAS</h1>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col'>
+                        <p><?php echo esc_html__(get_field('o_nas')); ?></p>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col text-center'>
+                        <a class='btn armin-button' href="<?php echo site_url('/o-nas'); ?>">Więcej</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -42,49 +49,28 @@ get_template_part('template-parts/hero'); ?>
         ));
         $offer->the_post(); ?>
         <div class='row offer-row'>
-            <div class='col text-center offer-back'>
-                <h1 class='offer-title'><?php echo esc_html__(the_title()); ?></h1>
+            <div class='col-12 col-md-6 align-self-center'>
+                <h1 class='offer-title text-center'><?php echo esc_html__(the_title()); ?></h1>
+                <?php
+                for ($i = 1; $i <= 6; ++$i) {
+                    $usluga = [
+                        'nazwa' => get_field('nazwa_uslugi_' . $i),
+                    ];
+                    if (isset($usluga['nazwa'])) {
+                ?>
+                        <h2>- <?php echo esc_html($usluga['nazwa']); ?></h2>
+                <?php
+                    }
+                }
+                ?>
+                <div class='row button-row'>
+                    <div class='col text-center'>
+                        <a class='btn armin-button' href="<?php echo the_permalink() ?>">Szczegółowa oferta</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class='row'>
-            <?php
-            for ($i = 1; $i <= 2; ++$i) {
-                $usluga = [
-                    'nazwa' => get_field('nazwa_uslugi_' . $i),
-                    'tresc' => get_field('usluga_' . $i)
-                ];
-                if (isset($usluga['nazwa']) && isset($usluga['tresc'])) {
-            ?>
-                    <div class='col-12 col-md-6 offer-back'>
-                        <h1><?php echo esc_html($usluga['nazwa']); ?></h1>
-                        <p><?php echo esc_html($usluga['tresc']); ?></p>
-                    </div>
-            <?php
-                }
-            }
-            ?>
-        </div>
-        <div class='row'>
-            <?php
-            for ($i = 3; $i <= 4; ++$i) {
-                $usluga = [
-                    'nazwa' => get_field('nazwa_uslugi_' . $i),
-                    'tresc' => get_field('usluga_' . $i)
-                ];
-                if (isset($usluga['nazwa']) && isset($usluga['tresc'])) {
-            ?>
-                    <div class='col-12 col-md-6 offer-back'>
-                        <h1><?php echo esc_html($usluga['nazwa']); ?></h1>
-                        <p><?php echo esc_html($usluga['tresc']); ?></p>
-                    </div>
-            <?php
-                }
-            }
-            ?>
-        </div>
-        <div class='row button-row'>
-            <div class='col text-center'>
-                <a class='btn armin-button' href="<?php echo the_permalink() ?>">Szczegółowa oferta</a>
+            <div class='col-12 col-md-6'>
+                <img src='<?php echo get_template_directory_uri(); ?>/images/offer-front.jpg'>
             </div>
         </div>
     </div>

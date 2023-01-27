@@ -101,16 +101,15 @@ html {
         text-transform: uppercase; }
   html body .front-section-offer {
     padding: 0.5em 0;
-    font-family: Lato;
-    background-image: url("../images/offer-front.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
+    font-family: Lato; }
     html body .front-section-offer .offer-row {
       margin-top: 2em;
       margin-bottom: 2em; }
     html body .front-section-offer .row .offer-title {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      border-bottom: solid #84000f 2px;
+      text-transform: uppercase;
+      margin: 1em 0; }
     html body .front-section-offer .offer-back {
       background: rgba(255, 255, 255, 0.45);
       margin: 1em 0; }
@@ -213,3 +212,13 @@ html {
             margin: 2em 0;
             color: #84000f;
             border-radius: 3px; }
+    html body footer a {
+      color: black;
+      text-decoration: none; }
+      html body footer a:hover {
+        color: #208b04; }
+      html body footer a:visited {
+        color: black;
+        text-decoration: none; }
+        html body footer a:visited:hover {
+          color: #208b04; }
