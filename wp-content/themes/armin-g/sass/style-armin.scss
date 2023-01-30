@@ -111,6 +111,10 @@ html {
         h1 {
           border-bottom: solid $main-color 2px;
           text-transform: uppercase;
+          margin: 1em 0;
+        }
+        a {
+          margin: 1em 0;
         }
       }
     }
