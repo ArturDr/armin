@@ -181,3 +181,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function num_posts_archive_realizacje($query) {
+    if (!is_admin() && $query->is_archive('realizacje') && $query->is_main_query()) {
+            $query->set('posts_per_page', 10);
+   }
+    return $query;
+}
+
+add_filter('pre_get_posts', 'num_posts_archive_realizacje');

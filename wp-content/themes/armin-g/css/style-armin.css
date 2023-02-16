@@ -116,7 +116,8 @@ html {
     html body .front-section-offer .offer-back {
       background: rgba(255, 255, 255, 0.45);
       margin: 1em 0; }
-  html body .button-row {
+  html body .button-row,
+  html body .page-link-row {
     margin-top: 2em;
     margin-bottom: 2em; }
   html body .front-section-projects {

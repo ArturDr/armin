@@ -33,7 +33,29 @@ get_template_part('template-parts/hero'); ?>
 
 		endwhile;
 
-		the_posts_navigation();
+		if (get_previous_posts_link() || get_next_posts_link()) : ?>
+			<div class="row page-link-row justify-content-between">
+				<div class="col-md-3 col-5">
+					<?php if (get_previous_posts_link()) :
+						if (get_post_type() == 'realizacje') : ?>
+							<a class="btn armin-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze realizacje</a>
+						<?php else : ?>
+							<a class="btn armin-button" href="<?php echo get_previous_posts_page_link(); ?>">Nowsze wpisy</a>
+					<?php endif;
+					endif; ?>
+				</div>
+				<div class="col-md-3 col-5">
+					<?php if (get_next_posts_link()) :
+						if (get_post_type() == 'realizacje') : ?>
+							<a class="btn armin-button" href="<?php echo get_next_posts_page_link(); ?>">Starsze realizacje</a>
+						<?php else : ?>
+							<a class="btn armin-button" href="<?php echo get_next_posts_page_link(); ?>">Starsze wpisy</a>
+					<?php endif;
+					endif; ?>
+				</div>
+			</div>
+	<?php
+		endif;
 
 	else :
 
