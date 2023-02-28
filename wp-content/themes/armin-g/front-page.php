@@ -14,13 +14,15 @@
  */
 
 get_header();
-get_template_part('template-parts/hero'); ?>
+get_template_part('template-parts/hero');
+$offerImage = get_field('oferta_zdjecie');
+$aboutUsImage = get_field('o_nas_zdjecie'); ?>
 
 <div class='front-section-about'>
     <div class='container'>
         <div class='row'>
             <div class='col-12 col-md-6'>
-                <img class='img-fluid' src='<?php echo get_template_directory_uri(); ?>/images/about-us-front.jpg'>
+                <img class='img-fluid' src="<?php echo esc_url($aboutUsImage['url']); ?>" alt="<?php echo esc_attr(($aboutUsImage['alt'] != '') ? esc_attr($aboutUsImage['alt']) : ' '); ?>">
             </div>
             <div class='col-12 col-md-6 align-self-center text-center'>
                 <h1>O NAS</h1>
@@ -58,7 +60,7 @@ get_template_part('template-parts/hero'); ?>
                 </div>
             </div>
             <div class='col-12 col-md-6'>
-                <img src='<?php echo get_template_directory_uri(); ?>/images/offer-front.jpg'>
+                <img src="<?php echo esc_url($offerImage['url']); ?>" alt="<?php echo esc_attr(($offerImage['alt'] != '') ? esc_attr($offerImage['alt']) : ' '); ?>">
             </div>
         </div>
     </div>
