@@ -20,10 +20,10 @@
 				$service = esc_html(get_field('usluga_' . $i));
 			?>
 				<div class='row armin-row'>
-					<div class='col-md-6 col-12'>
+					<div class='col-12'>
 						<h1><?php echo $nameService ?></h1>
 					</div>
-					<div class='col-md-6 col-12'>
+					<div class='col-12'>
 						<p><?php echo $service ?></p>
 					</div>
 				</div>

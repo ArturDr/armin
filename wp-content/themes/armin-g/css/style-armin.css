@@ -108,6 +108,8 @@ html {
       border-bottom: solid #84000f 2px;
       text-transform: uppercase;
       margin: 1em 0; }
+    html body .front-section-offer .row h2 {
+      text-transform: uppercase; }
     html body .front-section-offer .offer-back {
       background: rgba(255, 255, 255, 0.45);
       margin: 1em 0; }
@@ -162,8 +164,6 @@ html {
       text-decoration: none;
       color: black; }
   html body .icons-row {
-    border-top: solid #205b04 2px;
-    margin-top: 2em;
     margin-bottom: 2em;
     padding-top: 1em; }
     html body .icons-row .fa-solid,

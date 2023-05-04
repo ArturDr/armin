@@ -48,7 +48,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
                     ];
                     if (isset($usluga['nazwa'])) {
                 ?>
-                        <h2>- <?php echo esc_html($usluga['nazwa']); ?></h2>
+                        <h2 class='text-center'><?php echo esc_html($usluga['nazwa']); ?></h2>
                 <?php
                     }
                 }
