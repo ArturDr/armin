@@ -178,6 +178,9 @@ html {
   html body .projects-armin .h1-project {
     border: none;
     text-transform: uppercase; }
+  html body .con-404 {
+    margin-top: 12em;
+    margin-bottom: 12em; }
   html body footer {
     background: #e1e1e1;
     border-top: #84000f 2px solid; }

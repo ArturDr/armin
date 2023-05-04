@@ -11,7 +11,7 @@
 get_header();
 get_template_part('template-parts/hero');
 ?>
-<div class='container'>
+<div class='container con-404'>
 	<div class='row armin-row'>
 		<div class='col-12 text-center'>
 			<h1>Strona której szukasz, niestety nie istnieje.</h1>
