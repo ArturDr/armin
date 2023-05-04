@@ -45,7 +45,7 @@
 						<a class="nav-link" href="<?php echo get_post_type_archive_link('realizacje'); ?>">Realizacje</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo site_url('/kontakt'); ?>">Kontakt</a>
+						<a class="nav-link" href="#kontakt">Kontakt</a>
 					</li>
 				</ul>
 			</div>

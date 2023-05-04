@@ -12,7 +12,6 @@
 
 <div class='container-fluid <?php if (is_main_site()) {
                 if (get_post_type() == 'realizacje' || is_post_type_archive('realizacje')) { ?>bg-project
-                <?php } elseif (get_the_title() == 'Kontakt') { ?>bg-contact
                 <?php } elseif (get_the_title() == 'O nas') { ?>bg-about-us
                 <?php } elseif (get_the_title() == 'Oferta') { ?>bg-offer
                 <?php } elseif (get_the_title() == 'Strona główna') { ?>bg-front-page

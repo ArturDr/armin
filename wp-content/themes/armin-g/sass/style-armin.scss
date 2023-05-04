@@ -33,7 +33,6 @@ html {
 
     .bg-front-page,
     .bg-news,
-    .bg-contact,
     .bg-about-us,
     .bg-offer,
     .bg-project,
@@ -67,10 +66,6 @@ html {
 
     .bg-news {
       background-image: url("../images/news.jpg");
-    }
-
-    .bg-contact {
-      background-image: url("../images/contact.jpg");
     }
 
     .bg-about-us {
@@ -204,15 +199,9 @@ html {
       h1 {
         border-bottom: solid $main-color 2px;
       }
-      .h1-contact{
-        border-bottom: solid $button-hover 2px;
-      }
       a {
         text-decoration: none;
         color: $black;
-      }
-      .tel:hover {
-        color: $button-color;
       }
     }
 
@@ -221,7 +210,8 @@ html {
       margin-top: 2em;
       margin-bottom: 2em;
       padding-top: 1em;
-      .fa-solid, .fa-brands {
+      .fa-solid,
+      .fa-brands {
         font-size: 3em;
         color: $main-color;
         &:hover {
@@ -282,6 +272,17 @@ html {
               border-radius: 3px;
             }
           }
+        }
+      }
+      .armin-contact {
+        h2 {
+          text-transform: none;
+        }
+        .h1-contact {
+          border-bottom: solid $button-hover 2px;
+        }
+        .tel:hover {
+          color: $button-color;
         }
       }
       a {

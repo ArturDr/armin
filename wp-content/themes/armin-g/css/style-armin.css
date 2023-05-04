@@ -20,7 +20,6 @@ html {
       box-shadow: none; }
   html body .bg-front-page,
   html body .bg-news,
-  html body .bg-contact,
   html body .bg-about-us,
   html body .bg-offer,
   html body .bg-project,
@@ -30,7 +29,6 @@ html {
     background-position: center; }
     html body .bg-front-page .hero-banner-first,
     html body .bg-news .hero-banner-first,
-    html body .bg-contact .hero-banner-first,
     html body .bg-about-us .hero-banner-first,
     html body .bg-offer .hero-banner-first,
     html body .bg-project .hero-banner-first,
@@ -38,7 +36,6 @@ html {
       padding-top: 2em; }
       html body .bg-front-page .hero-banner-first img,
       html body .bg-news .hero-banner-first img,
-      html body .bg-contact .hero-banner-first img,
       html body .bg-about-us .hero-banner-first img,
       html body .bg-offer .hero-banner-first img,
       html body .bg-project .hero-banner-first img,
@@ -47,7 +44,6 @@ html {
         padding: 0.6em 1.5em; }
     html body .bg-front-page .hero-banner-second,
     html body .bg-news .hero-banner-second,
-    html body .bg-contact .hero-banner-second,
     html body .bg-about-us .hero-banner-second,
     html body .bg-offer .hero-banner-second,
     html body .bg-project .hero-banner-second,
@@ -55,7 +51,6 @@ html {
       padding-bottom: 2em; }
       html body .bg-front-page .hero-banner-second h1,
       html body .bg-news .hero-banner-second h1,
-      html body .bg-contact .hero-banner-second h1,
       html body .bg-about-us .hero-banner-second h1,
       html body .bg-offer .hero-banner-second h1,
       html body .bg-project .hero-banner-second h1,
@@ -70,8 +65,6 @@ html {
     background-image: url("../images/front page.jpg"); }
   html body .bg-news {
     background-image: url("../images/news.jpg"); }
-  html body .bg-contact {
-    background-image: url("../images/contact.jpg"); }
   html body .bg-about-us {
     background-image: url("../images/about us.jpg"); }
   html body .bg-project {
@@ -163,22 +156,20 @@ html {
     margin-bottom: 2em; }
     html body .armin-row h1 {
       border-bottom: solid #84000f 2px; }
-    html body .armin-row .h1-contact {
-      border-bottom: solid #205b04 2px; }
     html body .armin-row a {
       text-decoration: none;
       color: black; }
-    html body .armin-row .tel:hover {
-      color: #208b04; }
   html body .icons-row {
     border-top: solid #205b04 2px;
     margin-top: 2em;
     margin-bottom: 2em;
     padding-top: 1em; }
-    html body .icons-row .fa-solid, html body .icons-row .fa-brands {
+    html body .icons-row .fa-solid,
+    html body .icons-row .fa-brands {
       font-size: 3em;
       color: #84000f; }
-      html body .icons-row .fa-solid:hover, html body .icons-row .fa-brands:hover {
+      html body .icons-row .fa-solid:hover,
+      html body .icons-row .fa-brands:hover {
         color: #205b04; }
   html body .projects-armin img {
     margin: 1em 0; }
@@ -216,6 +207,12 @@ html {
             margin: 2em 0;
             color: #84000f;
             border-radius: 3px; }
+    html body footer .armin-contact h2 {
+      text-transform: none; }
+    html body footer .armin-contact .h1-contact {
+      border-bottom: solid #205b04 2px; }
+    html body footer .armin-contact .tel:hover {
+      color: #208b04; }
     html body footer a {
       color: black;
       text-decoration: none; }
