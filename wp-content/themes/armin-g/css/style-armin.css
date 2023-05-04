@@ -95,6 +95,8 @@ html {
         margin: 1em 0; }
       html body .front-section-about .row a {
         margin: 1em 0; }
+      html body .front-section-about .row p {
+        text-align: justify; }
   html body .front-section-offer {
     padding: 0.5em 0;
     font-family: Lato; }
