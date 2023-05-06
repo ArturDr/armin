@@ -163,6 +163,8 @@ html {
     html body .armin-row a {
       text-decoration: none;
       color: black; }
+    html body .armin-row .armin-button a {
+      color: white; }
   html body .icons-row {
     margin-bottom: 2em;
     padding-top: 1em; }

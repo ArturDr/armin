@@ -209,6 +209,11 @@ html {
         text-decoration: none;
         color: $black;
       }
+      .armin-button {
+        a {
+          color: $white;
+        }
+      }
     }
 
     .icons-row {

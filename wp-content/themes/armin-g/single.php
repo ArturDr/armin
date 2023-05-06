@@ -18,16 +18,12 @@ while (have_posts()) :
 	get_template_part('template-parts/content', 'single'); ?>
 
 	<div class='container'>
-		<div class='row armin-row'>
-			<div class='col'>
-				<?php
-				the_post_navigation(
-					array(
-						'prev_text' => '<span class="btn armin-button"> %title</span>',
-						'next_text' => '<span class="btn armin-button"> %title</span>',
-					)
-				);
-				?>
+		<div class='row armin-row justify-content-between'>
+			<div class='col'>	
+				<?php next_post_link( '<span class="btn armin-button">%link</span>' ); ?>
+			</div>
+			<div class='col text-end'>
+				<?php previous_post_link( '<span class="btn armin-button">%link</span>' ); ?>
 			</div>
 		</div>
 	</div>
