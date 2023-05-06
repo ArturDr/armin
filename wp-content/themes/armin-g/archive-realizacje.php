@@ -19,17 +19,56 @@ get_header(); ?>
 
     <?php
     /* Start the Loop */
-    while (have_posts()) :
-        the_post();
-
-        /*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-        get_template_part('template-parts/content', get_post_type());
-
-    endwhile;
+    $i = 0;
+            while (have_posts()) {
+                the_post();
+                $img = get_field('zdjecie_1');
+                    if ($i == 0) {
+                    ?>
+                        <div class='row'>
+                        <?php
+                    }
+                    if ($i <= 1) {
+                        ?>
+                            <div class='col-md-6 col-12'>
+                                <div class='img-container'>
+                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                    <a href='<?php the_permalink(); ?>'>
+                                        <div class="img-overlay">
+                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php
+                    }
+                    if ($i == 2) {
+                        ?>
+                        </div>
+                        <div class='row'>
+                        <?php
+                    }
+                    if ($i >= 2 && $i <= 4) {
+                        ?>
+                            <div class='col-md-4 col-12'>
+                                <div class='img-container'>
+                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                    <a href='<?php the_permalink(); ?>'>
+                                        <div class="img-overlay">
+                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php
+                    }
+                    if ($i == 4) {
+                        ?>
+                        </div>
+        <?php
+                    }
+                $i++;
+            }
 
     if (get_previous_posts_link() || get_next_posts_link()) : ?>
         <div class="row page-link-row justify-content-between">

@@ -212,12 +212,15 @@ html {
             margin: 2em 0;
             color: #84000f;
             border-radius: 3px; }
-    html body footer .armin-contact h2 {
-      text-transform: none; }
-    html body footer .armin-contact .h1-contact {
-      border-bottom: solid #205b04 2px; }
-    html body footer .armin-contact .tel:hover {
-      color: #208b04; }
+    html body footer .armin-contact {
+      padding-top: 0;
+      padding-bottom: 1.5em; }
+      html body footer .armin-contact .h1-contact {
+        border-bottom: solid #84000f 2px; }
+      html body footer .armin-contact h2 {
+        text-transform: none; }
+      html body footer .armin-contact .tel:hover {
+        color: #208b04; }
     html body footer a {
       color: black;
       text-decoration: none; }

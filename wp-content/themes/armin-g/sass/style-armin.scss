@@ -284,11 +284,13 @@ html {
         }
       }
       .armin-contact {
+        padding-top: 0;
+        padding-bottom: 1.5em;
+        .h1-contact {
+          border-bottom: solid $main-color 2px;
+        }
         h2 {
           text-transform: none;
-        }
-        .h1-contact {
-          border-bottom: solid $button-hover 2px;
         }
         .tel:hover {
           color: $button-color;

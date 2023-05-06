@@ -80,189 +80,58 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
                 <h1>Najnowsze realizacje</h1>
             </div>
         </div>
-        <?php
-        if ($projects->have_posts()) {
-            $i = 0;
-            $hmPosts = $projects->post_count;
-            while ($projects->have_posts()) {
-                $projects->the_post();
-                $img = get_field('zdjecie_1');
-                if ($hmPosts == 1) {
-        ?>
-                    <div class='row'>
-                        <div class='col-12'>
-                            <div class='img-container'>
-                                <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                <a href='<?php the_permalink(); ?>'>
-                                    <div class="img-overlay">
-                                        <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                    </div>
-                                </a>
-                            </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <?php
+                $i = 0;
+                while ($projects->have_posts()) {
+                    $projects->the_post();
+                    $img = get_field('zdjecie_1');
+                    if ($i == 0) { ?>
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
                         </div>
-                    </div>
-                    <?php
-                } elseif ($hmPosts == 2) {
-                    if ($i == 0) {
-                    ?>
-                        <div class='row'>
-                        <?php
-                    }
-                    if ($i <= 1) {
-                        ?>
-                            <div class='col-md-6 col-12'>
-                                <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                    <a href='<?php the_permalink(); ?>'>
-                                        <div class="img-overlay">
-                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                    }
-                    if ($i == 1) {
-                        ?>
+                    <?php }
+                    if ($i == 1) { ?>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
                         </div>
-                    <?php
-                    }
-                } elseif ($hmPosts == 3) {
-                    if ($i == 0) {
-                    ?>
-                        <div class='row'>
-                        <?php
-                    }
-                    if ($i <= 1) {
-                        ?>
-                            <div class='col-md-6 col-12'>
-                                <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                    <a href='<?php the_permalink(); ?>'>
-                                        <div class="img-overlay">
-                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                    }
-                    if ($i == 1) {
-                        ?>
+                    <?php }
+                    if ($i == 2) { ?>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
                         </div>
-                    <?php
-                    }
-                    if ($i == 2) {
-                    ?>
-                        <div class='row'>
-                            <div class='col-12'>
-                                <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                    <a href='<?php the_permalink(); ?>'>
-                                        <div class="img-overlay">
-                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                    <?php }
+                    if ($i == 3) { ?>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
                         </div>
-                    <?php
-                    }
-                } elseif ($hmPosts == 4) {
-                    if ($i == 0) {
-                    ?>
-                        <div class='row'>
-                        <?php
-                    }
-                    if ($i <= 1) {
-                        ?>
-                            <div class='col-md-6 col-12'>
-                                <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                    <a href='<?php the_permalink(); ?>'>
-                                        <div class="img-overlay">
-                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                    }
-                    if ($i == 2) {
-                        ?>
+                    <?php }
+                    if ($i == 4) { ?>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
                         </div>
-                        <div class='row'>
-                        <?php
-                    }
-                    if ($i >= 2 && $i <= 3) {
-                        ?>
-                            <div class='col-md-6 col-12'>
-                                <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                    <a href='<?php the_permalink(); ?>'>
-                                        <div class="img-overlay">
-                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                    }
-                    if ($i == 3) {
-                        ?>
-                        </div>
-                    <?php
-                    }
-                } elseif ($hmPosts == 5) {
-                    if ($i == 0) {
-                    ?>
-                        <div class='row'>
-                        <?php
-                    }
-                    if ($i <= 1) {
-                        ?>
-                            <div class='col-md-6 col-12'>
-                                <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                    <a href='<?php the_permalink(); ?>'>
-                                        <div class="img-overlay">
-                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                    }
-                    if ($i == 2) {
-                        ?>
-                        </div>
-                        <div class='row'>
-                        <?php
-                    }
-                    if ($i >= 2 && $i <= 4) {
-                        ?>
-                            <div class='col-md-4 col-12'>
-                                <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
-                                    <a href='<?php the_permalink(); ?>'>
-                                        <div class="img-overlay">
-                                            <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        <?php
-                    }
-                    if ($i == 4) {
-                        ?>
-                        </div>
-        <?php
-                    }
+                <?php }
+                    ++$i;
                 }
-                $i++;
-            }
-        }
-        wp_reset_postdata(); ?>
+                wp_reset_postdata(); ?>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <div class='row button-row'>
             <div class='col text-center'>
