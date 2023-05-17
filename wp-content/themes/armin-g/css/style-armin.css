@@ -235,3 +235,7 @@ html {
           text-decoration: none; }
           html body footer a:visited:hover {
             color: #208b04; }
+
+@media (max-width: 767.98px) {
+  html body .img-overlay {
+    opacity: 0.8; } }

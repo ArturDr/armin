@@ -96,7 +96,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
                     $img = get_field('zdjecie_1');
                     if ($i == 0) { ?>
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt="<?php echo esc_attr(($img['alt'] != '') ? esc_attr($img['alt']) : ' '); ?>"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><?php echo esc_html__(the_title()); ?></h2>
                             </div>
@@ -104,7 +104,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
                     <?php }
                     if ($i == 1) { ?>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt="<?php echo esc_attr(($img['alt'] != '') ? esc_attr($img['alt']) : ' '); ?>"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><?php echo esc_html__(the_title()); ?></h2>
                             </div>
@@ -112,7 +112,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
                     <?php }
                     if ($i == 2) { ?>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt="<?php echo esc_attr(($img['alt'] != '') ? esc_attr($img['alt']) : ' '); ?>"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><?php echo esc_html__(the_title()); ?></h2>
                             </div>
@@ -120,7 +120,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
                     <?php }
                     if ($i == 3) { ?>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt="<?php echo esc_attr(($img['alt'] != '') ? esc_attr($img['alt']) : ' '); ?>"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><?php echo esc_html__(the_title()); ?></h2>
                             </div>
@@ -128,7 +128,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
                     <?php }
                     if ($i == 4) { ?>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt=""></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo esc_url($img['url']) ?> " class="d-block w-100" alt="<?php echo esc_attr(($img['alt'] != '') ? esc_attr($img['alt']) : ' '); ?>"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h2><?php echo esc_html__(the_title()); ?></h2>
                             </div>
