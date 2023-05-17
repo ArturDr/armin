@@ -32,7 +32,7 @@ get_header(); ?>
                         ?>
                             <div class='col-md-6 col-12'>
                                 <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                    <img src="<?php echo esc_url($img['url']) ?> " alt="<?php echo esc_attr(($img['alt'] != '') ? esc_attr($img['alt']) : ' '); ?>">
                                     <a href='<?php the_permalink(); ?>'>
                                         <div class="img-overlay">
                                             <div class="img-text"><?php echo esc_html__(the_title()); ?></div>
@@ -52,7 +52,7 @@ get_header(); ?>
                         ?>
                             <div class='col-md-4 col-12'>
                                 <div class='img-container'>
-                                    <img src="<?php echo esc_url($img['url']) ?> " alt="">
+                                    <img src="<?php echo esc_url($img['url']) ?> " alt="<?php echo esc_attr(($img['alt'] != '') ? esc_attr($img['alt']) : ' '); ?>">
                                     <a href='<?php the_permalink(); ?>'>
                                         <div class="img-overlay">
                                             <div class="img-text"><?php echo esc_html__(the_title()); ?></div>

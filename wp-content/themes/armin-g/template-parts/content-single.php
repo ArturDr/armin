@@ -26,24 +26,24 @@
 			$img6 = get_field('zdjecie_6'); ?>
 			<div class='row'>
 				<div class='col-md-4 col-12'>
-					<img src='<?php echo esc_url($img1['url']); ?>' alt='<?php echo esc_attr($img1['alt']); ?>'>
+					<img src='<?php echo esc_url($img1['url']); ?>' alt='<?php echo esc_attr(($img1['alt'] != '') ? esc_attr($img1['alt']) : ' '); ?>'>
 				</div>
 				<div class='col-md-4 col-12'>
-					<img src='<?php echo esc_url($img2['url']); ?>' alt='<?php echo esc_attr($img2['alt']); ?>'>
+					<img src='<?php echo esc_url($img2['url']); ?>' alt='<?php echo esc_attr(($img2['alt'] != '') ? esc_attr($img2['alt']) : ' '); ?>'>
 				</div>
 				<div class='col-md-4 col-12'>
-					<img src='<?php echo esc_url($img3['url']); ?>' alt='<?php echo esc_attr($img3['alt']); ?>'>
+					<img src='<?php echo esc_url($img3['url']); ?>' alt='<?php echo esc_attr(($img3['alt'] != '') ? esc_attr($img3['alt']) : ' '); ?>'>
 				</div>
 			</div>
 			<div class='row'>
 				<div class='col-md-4 col-12'>
-					<img src='<?php echo esc_url($img4['url']); ?>' alt='<?php echo esc_attr($img4['alt']); ?>'>
+					<img src='<?php echo esc_url($img4['url']); ?>' alt='<?php echo esc_attr(($img4['alt'] != '') ? esc_attr($img4['alt']) : ' '); ?>'>
 				</div>
 				<div class='col-md-4 col-12'>
-					<img src='<?php echo esc_url($img5['url']); ?>' alt='<?php echo esc_attr($img5['alt']); ?>'>
+					<img src='<?php echo esc_url($img5['url']); ?>' alt='<?php echo esc_attr(($img5['alt'] != '') ? esc_attr($img5['alt']) : ' '); ?>'>
 				</div>
 				<div class='col-md-4 col-12'>
-					<img src='<?php echo esc_url($img6['url']); ?>' alt='<?php echo esc_attr($img6['alt']); ?>'>
+					<img src='<?php echo esc_url($img6['url']); ?>' alt='<?php echo esc_attr(($img6['alt'] != '') ? esc_attr($img6['alt']) : ' '); ?>'>
 				</div>
 			</div>
 	</div>
