@@ -21,7 +21,7 @@
             } ?>'>
     <div class='row justify-content-center hero-banner-first'>
         <div class='col-md-6 col-12'>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logo 6 text g.png" alt="" class='img-fluid'>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo ostat g.png" alt="" class='img-fluid'>
         </div>
     </div>
     <div class='row justify-content-center hero-banner-second'>

@@ -26,7 +26,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
             </div>
             <div class='col-12 col-md-6 align-self-center text-center'>
                 <h1>O NAS</h1>
-                <p><?php echo esc_html__(get_field('o_nas')); ?></p>
+                <?php echo (get_field('o_nas')); ?>
                 <a class='btn armin-button' href="<?php echo site_url('/o-nas'); ?>">Więcej</a>
             </div>
         </div>
@@ -77,7 +77,7 @@ $aboutUsImage = get_field('o_nas_zdjecie'); ?>
         )); ?>
         <div class='row'>
             <div class='col text-center'>
-                <h1>Najnowsze realizacje</h1>
+                <h1>Realizacje</h1>
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

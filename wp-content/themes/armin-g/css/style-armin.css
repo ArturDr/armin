@@ -2,234 +2,236 @@ html {
   font-size: 100%; }
   html .page {
     margin: 0; }
-  html body .armin-nav {
-    background: #84000f; }
-    html body .armin-nav a {
-      color: white;
+  html body {
+    background: #f0f0f0; }
+    html body .armin-nav {
+      background: #84000f; }
+      html body .armin-nav a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Lato;
+        font-size: 1.2em; }
+      html body .armin-nav a:hover {
+        color: white; }
+      html body .armin-nav .navbar-toggler {
+        border-color: white; }
+        html body .armin-nav .navbar-toggler .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+      html body .armin-nav .navbar-toggler:focus {
+        box-shadow: none; }
+    html body .bg-front-page,
+    html body .bg-news,
+    html body .bg-about-us,
+    html body .bg-offer,
+    html body .bg-project,
+    html body .bg-404 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+      html body .bg-front-page .hero-banner-first,
+      html body .bg-news .hero-banner-first,
+      html body .bg-about-us .hero-banner-first,
+      html body .bg-offer .hero-banner-first,
+      html body .bg-project .hero-banner-first,
+      html body .bg-404 .hero-banner-first {
+        padding-top: 2em; }
+        html body .bg-front-page .hero-banner-first img,
+        html body .bg-news .hero-banner-first img,
+        html body .bg-about-us .hero-banner-first img,
+        html body .bg-offer .hero-banner-first img,
+        html body .bg-project .hero-banner-first img,
+        html body .bg-404 .hero-banner-first img {
+          background: rgba(255, 255, 255, 0.45);
+          padding: 0.6em 1.5em; }
+      html body .bg-front-page .hero-banner-second,
+      html body .bg-news .hero-banner-second,
+      html body .bg-about-us .hero-banner-second,
+      html body .bg-offer .hero-banner-second,
+      html body .bg-project .hero-banner-second,
+      html body .bg-404 .hero-banner-second {
+        padding-bottom: 2em; }
+        html body .bg-front-page .hero-banner-second h1,
+        html body .bg-news .hero-banner-second h1,
+        html body .bg-about-us .hero-banner-second h1,
+        html body .bg-offer .hero-banner-second h1,
+        html body .bg-project .hero-banner-second h1,
+        html body .bg-404 .hero-banner-second h1 {
+          padding: 0.6em 1.5em;
+          background: rgba(255, 255, 255, 0.45);
+          margin: 0.2em 0;
+          font-family: Lato;
+          font-weight: 500;
+          text-transform: uppercase; }
+    html body .bg-front-page {
+      background-image: url("../images/front page.jpg"); }
+    html body .bg-news {
+      background-image: url("../images/news.jpg"); }
+    html body .bg-about-us {
+      background-image: url("../images/about us.jpg"); }
+    html body .bg-project {
+      background-image: url("../images/project.jpg"); }
+    html body .bg-offer {
+      background-image: url("../images/offer.jpg"); }
+    html body .bg-404 {
+      background-image: url("../images/404 image.jpg"); }
+    html body .armin-button {
       text-decoration: none;
       text-transform: uppercase;
-      font-family: Lato;
-      font-size: 1.2em; }
-    html body .armin-nav a:hover {
+      color: white;
+      background-color: #208b04;
+      padding: 0.5em 1em;
+      border-radius: 3px; }
+    html body .armin-button:hover {
+      background-color: #205b04;
+      border-color: #205b04;
       color: white; }
-    html body .armin-nav .navbar-toggler {
-      border-color: white; }
-      html body .armin-nav .navbar-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-    html body .armin-nav .navbar-toggler:focus {
-      box-shadow: none; }
-  html body .bg-front-page,
-  html body .bg-news,
-  html body .bg-about-us,
-  html body .bg-offer,
-  html body .bg-project,
-  html body .bg-404 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
-    html body .bg-front-page .hero-banner-first,
-    html body .bg-news .hero-banner-first,
-    html body .bg-about-us .hero-banner-first,
-    html body .bg-offer .hero-banner-first,
-    html body .bg-project .hero-banner-first,
-    html body .bg-404 .hero-banner-first {
-      padding-top: 2em; }
-      html body .bg-front-page .hero-banner-first img,
-      html body .bg-news .hero-banner-first img,
-      html body .bg-about-us .hero-banner-first img,
-      html body .bg-offer .hero-banner-first img,
-      html body .bg-project .hero-banner-first img,
-      html body .bg-404 .hero-banner-first img {
-        background: rgba(255, 255, 255, 0.45);
-        padding: 0.6em 1.5em; }
-    html body .bg-front-page .hero-banner-second,
-    html body .bg-news .hero-banner-second,
-    html body .bg-about-us .hero-banner-second,
-    html body .bg-offer .hero-banner-second,
-    html body .bg-project .hero-banner-second,
-    html body .bg-404 .hero-banner-second {
-      padding-bottom: 2em; }
-      html body .bg-front-page .hero-banner-second h1,
-      html body .bg-news .hero-banner-second h1,
-      html body .bg-about-us .hero-banner-second h1,
-      html body .bg-offer .hero-banner-second h1,
-      html body .bg-project .hero-banner-second h1,
-      html body .bg-404 .hero-banner-second h1 {
-        padding: 0.6em 1.5em;
-        background: rgba(255, 255, 255, 0.45);
-        margin: 0.2em 0;
-        font-family: Lato;
-        font-weight: 500;
-        text-transform: uppercase; }
-  html body .bg-front-page {
-    background-image: url("../images/front page.jpg"); }
-  html body .bg-news {
-    background-image: url("../images/news.jpg"); }
-  html body .bg-about-us {
-    background-image: url("../images/about us.jpg"); }
-  html body .bg-project {
-    background-image: url("../images/project.jpg"); }
-  html body .bg-offer {
-    background-image: url("../images/offer.jpg"); }
-  html body .bg-404 {
-    background-image: url("../images/404 image.jpg"); }
-  html body .armin-button {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    background-color: #208b04;
-    padding: 0.5em 1em;
-    border-radius: 3px; }
-  html body .armin-button:hover {
-    background-color: #205b04;
-    border-color: #205b04;
-    color: white; }
-  html body .front-section-about {
-    padding: 0.5em 0;
-    font-family: Lato; }
-    html body .front-section-about .row {
-      margin: 2em 0; }
-      html body .front-section-about .row h1 {
+    html body .front-section-about {
+      padding: 0.5em 0;
+      font-family: Lato; }
+      html body .front-section-about .row {
+        margin: 2em 0; }
+        html body .front-section-about .row h1 {
+          border-bottom: solid #84000f 2px;
+          text-transform: uppercase;
+          margin: 1em 0; }
+        html body .front-section-about .row a {
+          margin: 1em 0; }
+        html body .front-section-about .row p {
+          text-align: justify; }
+    html body .front-section-offer {
+      padding: 0.5em 0;
+      font-family: Lato; }
+      html body .front-section-offer .offer-row {
+        margin-top: 2em;
+        margin-bottom: 2em; }
+      html body .front-section-offer .row .offer-title {
+        text-transform: uppercase;
         border-bottom: solid #84000f 2px;
         text-transform: uppercase;
         margin: 1em 0; }
-      html body .front-section-about .row a {
+      html body .front-section-offer .row h2 {
+        text-transform: uppercase; }
+      html body .front-section-offer .offer-back {
+        background: rgba(255, 255, 255, 0.45);
         margin: 1em 0; }
-      html body .front-section-about .row p {
-        text-align: justify; }
-  html body .front-section-offer {
-    padding: 0.5em 0;
-    font-family: Lato; }
-    html body .front-section-offer .offer-row {
+    html body .button-row,
+    html body .page-link-row {
       margin-top: 2em;
       margin-bottom: 2em; }
-    html body .front-section-offer .row .offer-title {
-      text-transform: uppercase;
-      border-bottom: solid #84000f 2px;
-      text-transform: uppercase;
+    html body .front-section-projects {
+      padding: 0.5em 0;
+      font-family: Lato; }
+      html body .front-section-projects .row h1 {
+        border-bottom: solid #84000f 2px;
+        text-transform: uppercase;
+        margin: 1em 0; }
+    html body .img-container {
+      position: relative;
       margin: 1em 0; }
-    html body .front-section-offer .row h2 {
-      text-transform: uppercase; }
-    html body .front-section-offer .offer-back {
-      background: rgba(255, 255, 255, 0.45);
-      margin: 1em 0; }
-  html body .button-row,
-  html body .page-link-row {
-    margin-top: 2em;
-    margin-bottom: 2em; }
-  html body .front-section-projects {
-    padding: 0.5em 0;
-    font-family: Lato; }
-    html body .front-section-projects .row h1 {
-      border-bottom: solid #84000f 2px;
-      text-transform: uppercase;
-      margin: 1em 0; }
-  html body .img-container {
-    position: relative;
-    margin: 1em 0; }
-  html body .front-image {
-    display: block;
-    width: 100%;
-    height: auto; }
-  html body .img-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 1s ease;
-    background-color: #84000f; }
-  html body .img-container:hover .img-overlay {
-    opacity: 1; }
-  html body .img-text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  html body .armin-row {
-    font-family: Lato;
-    margin-top: 2em;
-    margin-bottom: 2em; }
-    html body .armin-row h1 {
-      border-bottom: solid #84000f 2px; }
-    html body .armin-row a {
-      text-decoration: none;
-      color: black; }
-    html body .armin-row .armin-button a {
-      color: white; }
-  html body .icons-row {
-    margin-bottom: 2em;
-    padding-top: 1em; }
-    html body .icons-row .fa-solid,
-    html body .icons-row .fa-brands {
-      font-size: 3em;
-      color: #84000f; }
-      html body .icons-row .fa-solid:hover,
-      html body .icons-row .fa-brands:hover {
-        color: #205b04; }
-  html body .projects-armin img {
-    margin: 1em 0; }
-  html body .projects-armin .h1-project {
-    border: none;
-    text-transform: uppercase; }
-  html body .con-404 {
-    margin-top: 12em;
-    margin-bottom: 12em; }
-  html body footer {
-    background: #e1e1e1;
-    border-top: #84000f 2px solid; }
-    html body footer .row {
-      padding-top: 2em; }
-      html body footer .row h2 {
-        text-transform: uppercase; }
-      html body footer .row .wpcf7 {
-        font-family: Lato; }
-        html body footer .row .wpcf7 .wpcf7-form {
-          font-family: Lato; }
-          html body footer .row .wpcf7 .wpcf7-form label {
-            width: 100%; }
-            html body footer .row .wpcf7 .wpcf7-form label .wpcf7-form-control-wrap input {
-              width: 100%; }
-            html body footer .row .wpcf7 .wpcf7-form label .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
-              color: #84000f; }
-          html body footer .row .wpcf7 .wpcf7-form .wpcf7-submit {
-            width: 100%;
-            background-color: #208b04;
-            color: white;
-            text-transform: uppercase; }
-          html body footer .row .wpcf7 .wpcf7-form .wpcf7-submit:hover {
-            background-color: #205b04; }
-          html body footer .row .wpcf7 .wpcf7-form .wpcf7-spinner {
-            display: none; }
-          html body footer .row .wpcf7 .wpcf7-form .wpcf7-response-output {
-            border: #208b04 solid 2px;
-            margin: 2em 0;
-            color: #84000f;
-            border-radius: 3px; }
-    html body footer .armin-contact {
-      padding-top: 0;
-      padding-bottom: 1.5em; }
-      html body footer .armin-contact .h1-contact {
+    html body .front-image {
+      display: block;
+      width: 100%;
+      height: auto; }
+    html body .img-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 1s ease;
+      background-color: #84000f; }
+    html body .img-container:hover .img-overlay {
+      opacity: 1; }
+    html body .img-text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; }
+    html body .armin-row {
+      font-family: Lato;
+      margin-top: 2em;
+      margin-bottom: 2em; }
+      html body .armin-row h1 {
         border-bottom: solid #84000f 2px; }
-      html body footer .armin-contact h2 {
-        text-transform: none; }
-      html body footer .armin-contact .tel:hover {
-        color: #208b04; }
-    html body footer a {
-      color: black;
-      text-decoration: none; }
-      html body footer a:hover {
-        color: #208b04; }
-      html body footer a:visited {
+      html body .armin-row a {
+        text-decoration: none;
+        color: black; }
+      html body .armin-row .armin-button a {
+        color: white; }
+    html body .icons-row {
+      margin-bottom: 2em;
+      padding-top: 1em; }
+      html body .icons-row .fa-solid,
+      html body .icons-row .fa-brands {
+        font-size: 3em;
+        color: #84000f; }
+        html body .icons-row .fa-solid:hover,
+        html body .icons-row .fa-brands:hover {
+          color: #205b04; }
+    html body .projects-armin img {
+      margin: 1em 0; }
+    html body .projects-armin .h1-project {
+      border: none;
+      text-transform: uppercase; }
+    html body .con-404 {
+      margin-top: 12em;
+      margin-bottom: 12em; }
+    html body footer {
+      background: #e1e1e1;
+      border-top: #84000f 2px solid; }
+      html body footer .row {
+        padding-top: 2em; }
+        html body footer .row h2 {
+          text-transform: uppercase; }
+        html body footer .row .wpcf7 {
+          font-family: Lato; }
+          html body footer .row .wpcf7 .wpcf7-form {
+            font-family: Lato; }
+            html body footer .row .wpcf7 .wpcf7-form label {
+              width: 100%; }
+              html body footer .row .wpcf7 .wpcf7-form label .wpcf7-form-control-wrap input {
+                width: 100%; }
+              html body footer .row .wpcf7 .wpcf7-form label .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+                color: #84000f; }
+            html body footer .row .wpcf7 .wpcf7-form .wpcf7-submit {
+              width: 100%;
+              background-color: #208b04;
+              color: white;
+              text-transform: uppercase; }
+            html body footer .row .wpcf7 .wpcf7-form .wpcf7-submit:hover {
+              background-color: #205b04; }
+            html body footer .row .wpcf7 .wpcf7-form .wpcf7-spinner {
+              display: none; }
+            html body footer .row .wpcf7 .wpcf7-form .wpcf7-response-output {
+              border: #208b04 solid 2px;
+              margin: 2em 0;
+              color: #84000f;
+              border-radius: 3px; }
+      html body footer .armin-contact {
+        padding-top: 0;
+        padding-bottom: 1.5em; }
+        html body footer .armin-contact .h1-contact {
+          border-bottom: solid #84000f 2px; }
+        html body footer .armin-contact h2 {
+          text-transform: none; }
+        html body footer .armin-contact .tel:hover {
+          color: #208b04; }
+      html body footer a {
         color: black;
         text-decoration: none; }
-        html body footer a:visited:hover {
+        html body footer a:hover {
           color: #208b04; }
+        html body footer a:visited {
+          color: black;
+          text-decoration: none; }
+          html body footer a:visited:hover {
+            color: #208b04; }
